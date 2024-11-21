@@ -39,8 +39,8 @@ export const toggleTodo = createAsyncThunk(
   //asyncThunk only take single argument, so we passed it as an object
   async ({ id, currentCompleted }) => {
     console.log("id: ", id);
-    console.log("currentcompleted: ", currentCompleted);
     const updatedData = { completed: !currentCompleted };
+    console.log("currentcompleted: ", updatedData);
     const response = await axios.patch(`${API_URL}/${id}`, updatedData);
     const data = await response.data;
     return data;
