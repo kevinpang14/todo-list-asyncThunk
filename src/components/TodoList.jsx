@@ -34,7 +34,7 @@ const TodoList = () => {
   if (todos.length === 0) {
     return (
       <div className="alert alert-info">
-        <p>{translations[lang].noTodos}</p>
+        <p>{translations?.[lang]?.noTodos}</p>
       </div>
     );
   }
@@ -69,7 +69,7 @@ const TodoList = () => {
                 dispatch(deleteTodo(todo.id));
               }}
             >
-              {translations[lang].delete}
+              {translations?.[lang]?.delete}
             </button>
             <button
               className="btn btn-warning btn-sm mx-1"
@@ -78,7 +78,7 @@ const TodoList = () => {
                 dispatch(setTodoForUpdate(todo));
               }}
             >
-              {translations[lang].update}
+              {translations?.[lang]?.update}
             </button>
           </div>
         </li>

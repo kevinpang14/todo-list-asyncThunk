@@ -52,7 +52,7 @@ const TodoInput = () => {
         <input
           type="text"
           className="form-control"
-          placeholder={translations[lang].placeholder}
+          placeholder={translations?.[lang]?.placeholder || "Add a new todo..."}
           required
           value={text}
           onChange={(e) => setText(e.target.value)}
@@ -63,7 +63,9 @@ const TodoInput = () => {
           type="submit"
           disabled={loading}
         >
-          {isUpdate ? translations[lang].update : translations[lang].add}
+          {isUpdate
+            ? translations?.[lang]?.update || "Update"
+            : translations?.[lang]?.add || "Add"}
         </button>
       </form>
     </div>

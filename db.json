@@ -8,7 +8,7 @@
     {
       "id": "38bd9cce-c1fe-4e1b-9e68-9131bb6ad94b",
       "text": "Dinner",
-      "completed": false
+      "completed": true
     },
     {
       "id": "5b11d2f7-5255-44cb-9338-fe81513fa1e8",
@@ -29,6 +29,30 @@
       "id": "33dfaaaa-c9f2-4652-af6a-a2eba8933b8f",
       "text": "Check Restaurant",
       "completed": false
+    }
+  ],
+  "lang": [
+    {
+      "translations": {
+        "en": {
+          "title": "To do List",
+          "add": "Add",
+          "update": "Update",
+          "delete": "Delete",
+          "done": "Done",
+          "placeholder": "Add new task...",
+          "noTodos": "You have no todos.."
+        },
+        "id": {
+          "title": "Daftar Tugas",
+          "add": "Tambah",
+          "update": "Perbarui",
+          "delete": "Hapus",
+          "done": "Selesai",
+          "placeholder": "Tambah tugas baru...",
+          "noTodos": "Anda tidak memiliki tugas.."
+        }
+      }
     }
   ]
 }

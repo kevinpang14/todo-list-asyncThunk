@@ -3,6 +3,7 @@ import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleLang } from "./redux/slices/langSlice";
+import { fetchTranslations } from "./redux/async/langSlice";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -12,6 +13,10 @@ const App = () => {
     const updatelang = lang === "en" ? "id" : "en";
     dispatch(toggleLang(updatelang));
   };
+
+  useEffect(() => {
+    dispatch(fetchTranslations(lang));
+  }, [lang, dispatch]);
 
   return (
     <div className="container mt-5">
@@ -25,7 +30,7 @@ const App = () => {
             <div className="card-body">
               <h1 className="card-title text-center mb-4">
                 {/* changed language */}
-                {translations[lang].title}
+                {translations?.[lang].title || "Todo List"}
               </h1>
               <TodoInput />
               <TodoList />
