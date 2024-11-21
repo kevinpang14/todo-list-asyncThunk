@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": "b9c15f99-5117-4e15-97b9-628c56e7e9be",
+      "text": "Meeting and breakfastt",
+      "completed": false
+    },
+    {
+      "id": "38bd9cce-c1fe-4e1b-9e68-9131bb6ad94b",
+      "text": "Dinner",
+      "completed": false
+    },
+    {
+      "id": "5b11d2f7-5255-44cb-9338-fe81513fa1e8",
+      "text": "Surfing",
+      "completed": false
+    },
+    {
+      "id": "3c69bdd1-0870-4b3f-a621-06c6c01d57ae",
+      "text": "Check hotel for tom",
+      "completed": false
+    },
+    {
+      "id": "e29ed025-2b02-4e2c-aebe-039da036fd21",
+      "text": "Buy some drinks",
+      "completed": false
+    }
+  ]
+}
